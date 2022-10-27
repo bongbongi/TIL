@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 속성</title>
+    <!-- 
+       이름 국어 영어
+       5명
+
+       마지막에 합계
+     -->
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /*선을 하나로 만들어줌*/
+
+        }
+
+        th,
+        td {
+            width: 100px;
+            height: 30px;
+        }
+
+        thead {
+            background-color: pink;
+        }
+
+        tfoot {
+            background-color: gray;
+        }
+
+        tbody>tr:nth-of-type(2n) {
+            /*tbady의 자식 tr의 2의 배수*/
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>성적표</caption>
+
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>국어</th>
+                <th>영어</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>임꺽정</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>이순신</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>유관순</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>김영이</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+
+
+
+
+</body>
+
+</html>
